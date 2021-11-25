@@ -1,0 +1,95 @@
+.row{
+    width: 80%;
+    margin: auto;
+}
+
+/* start product's css */
+    /* start hover img1 */
+        .product .img{
+            display: inline-block;
+        }
+
+        #img1b{
+            display: none;
+        }
+
+        .product .img:hover #img1{
+            display: none;
+        }
+
+        .product .img:hover #img1b{
+            display: block;
+        }
+    /*hover img1 end */
+
+    .row > .product{
+        position: relative;
+        display: inline-block;
+        margin-right: 50px;
+        margin-top: 50px;
+    }
+
+    /* start label_container's css */
+        .product > .label_container{
+            width: 200px;
+            height: 30px;
+            position: absolute;
+            bottom: 100px;
+            left: 10px;
+        }
+
+        .label_container .discount{
+            background-color: #eb0037;
+        }
+
+        .label_container .discount:after{ /*Simbolo percentuale nell'indicatore di sconto*/
+            content: "\0025";
+        }
+
+        .label_container .sustainability{
+            background-color: #00875a;
+        }
+
+        .label_container > span{ /*stile delle etichette nelle img*/
+            padding: 5px;
+            font-weight: bold;
+            color: #fff;
+        }
+    /* label_container's css end */
+
+    /* start heart's css */
+        .product > .heart{
+            font-size: 50px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+    /* heart's css end */
+
+    /* start  name_product's css*/
+        .name_product > .brand{
+            font-size: 15px;
+            color: rgb(87, 87, 87);
+        }
+
+        .name_product > .title{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .name_product .money:after{
+            content: " \20AC";
+        }
+
+        .name_product .money.discounted{
+            font-size: 15px;
+            color: red;
+        }
+
+        .name_product .money.old{
+            font-size: 15px;
+            text-decoration: line-through;
+        }
+    /* name_product's css end*/
+    
+/*product's css end*/
