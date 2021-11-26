@@ -21,6 +21,7 @@ body{
         }
         .product .img{
             display: inline-block;
+            width: 100%;
         }
 
         .img .second-image{
@@ -33,7 +34,13 @@ body{
 
         .product .img:hover .second-image{
             display: block;
+            width: 100%; /*L'img deve occupare il 100% di suo padre(producct), che è il 30% della riga*/
         }
+
+        .img .first-image{ /*L'img deve occupare il 100% di suo padre(producct), che è il 30% della riga*/
+            width: 100%;
+        }
+
     /*hover's css end */
 
     .row > .product{
@@ -41,8 +48,9 @@ body{
         display: inline-block;
         margin-right: 50px;
         margin-top: 50px;
+        width: 30%;
     }
-
+    
     /* start label_container's css */
         .product > .label_container{
             width: 200px;
