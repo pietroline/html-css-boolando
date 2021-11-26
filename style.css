@@ -16,78 +16,25 @@ body{
 /* start product's css */
 
     /* start hover's css*/
+        .product .img:hover{
+            cursor: pointer;
+        }
         .product .img{
             display: inline-block;
         }
 
-        #img1b, #img2b, #img3b, #img4b, #img5b, #img6b{
+        .img .second-image{
             display: none;
         }
 
-        /* start img1 hover's css */
-            .product .img:hover #img1{
-                display: none;
-            }
+        .product .img:hover .first-image{
+            display: none;
+         }
 
-            .product .img:hover #img1b{
-                display: block;
-            }
-        /* img1 hover's css end */
-
-        /* start img2 hover's css */
-            .product .img:hover #img2{
-                display: none;
-            }
-
-            .product .img:hover #img2b{
-                display: block;
-            }
-        /* img2 hover's css end */
-
-        /* start img3 hover's css */
-            .product .img:hover #img3{
-                display: none;
-            }
-
-            .product .img:hover #img3b{
-                display: block;
-            }
-        /* img3 hover's css end */
-
-        /* start img4 hover's css */
-            .product .img:hover #img4{
-                display: none;
-            }
-
-            .product .img:hover #img4b{
-                display: block;
-            }
-        /* img4 hover's css end */
-
-        /* start img5 hover's css */
-            .product .img:hover #img5{
-                display: none;
-            }
-
-            .product .img:hover #img5b{
-                display: block;
-            }
-        /* img5 hover's css end */
-
-        /* start img6 hover's css */
-            .product .img:hover #img6{
-                display: none;
-            }
-
-            .product .img:hover #img6b{
-                display: block;
-            }
-        /* img6 hover's css end */
-
+        .product .img:hover .second-image{
+            display: block;
+        }
     /*hover's css end */
-
-        
-
 
     .row > .product{
         position: relative;
